@@ -2,49 +2,31 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Hello World</title>
+    <!--<link rel="stylesheet" href="stylesheet/styles.css">-->
+    <title>Recipe Card</title>
   </head>
   <body>
-      <!-- Enter code below this line -->
-      <h1>Web Development Process (example)</h1>
-      <h2>Research</h2>
-      <p><strong>In the web development process</strong>, the research phase creates a relationship with your <em>client</em> and institutes clear guidelines for your project defining constraints and deliverables that satisfy both the client and the contractor.  In summary, it sets the purpose, requirements and expectations for the project.</p>
-
-      <h2>Planning</h2>
-      <p>The planning phase determines when and how the website will get built. Timelines and sitemaps will be decided. Software for project development will be selected, such as Ruby on Rails or Django for the backend, and React or Vue for the frontend.</p>
-
-      <h2>Design</h2>
-      <p>The Design phase presents process for small companies. In addition it communicates a graphical feel for multiple teams. User centric designs base layout and composition decisions to assist the needs of the decided upon target audience. Buttons Colors, and branding are added to visualize the final product for programmers, stakeholders, and clients.</p>
-
-      <h2>Content Creation</h2>
-      <p>With the user in mind, content is created with the appropriate tone of voice to fulfill the purpose of the project. Content not only attracts a certain audience, but it also improves SEO (Search Engine Optimization), using key words to rank higher on Google or Yahoo!</p>
-
-      <h2>Development</h2>
-      <p>Development is the most time consuming part of the web development cycle. Using the technology stack determined in the planning phase, the contractor/team begins to build the website or web application through code.</p>
-      <p>Based on the target user, the developer determines whether a mobile-first approach is the appropriate method. A mobile first approach means that programmers will develop for mobile devices first, and then they will develop for desktop and laptop computers.On the frontend, CSS and HTML are used to layout and style the web app to resemble the prototypes built in the Design phase. Through the use of HTML and CSS, a static website can be created. Javascript provides interactive experiences for the users. Frontend Frameworks such as React or Vue allow for dynamic loading and component based programming for better organization.</p>
-      <p>While frontend development focuses on what is seen by the user, the backend focuses on servers, databases, client-side functions and more.</p>
-      
-      <h2>Testing & QA</h2>
-      <p>To be sure that the product is ready for a client, a Quality Assurance developer sends the web application through a series of tests. Some of those might include Load Testing, Stress Testing, or Soak testing to find the websites limits in various circumstances.</p>
-
-      <h2>Maintenence</h2>
-      <p>Lastly, the web app is finally ready for deployment. The coded website is pushed to a server where anyone can view the product.<p>
-      <p>Continuous feedback from users through A/B tests, surveys, or questionnaires require continuous maintenance. Once the web application is deployed it cannot be left alone. Be prepared for costs to maintain the product in the planning phase.</p>
-      <p>Development cycles continue to happen (about every 3 weeks, depending on the company) with new features, bug fixes, or other changes addressing customer needs to keep consumers happy.</p>
-      <p>Django is an example of a backend framework that is used to communicate with servers and databases.</p>
-
-      <h2>Random list</h2>
-      <ul>
-        <li>Apples</li>
-        <li>Oranges</li>
-        <li>Bananas</li>
-        <li>Pineapples</li>
-      </ul>
-      <ol>
-        <li>Apples</li>
-        <li>Oranges</li>
-        <li>Bananas</li>
-        <li>Pineapples</li>
-      </ol>
+    <div class="recipe-card">
+      <div class="img-wrap">
+        <img src="images/banana-pie.png" alt="Banana pie" width="500" height="216">
+      </div>
+      <div class="text">
+        <h3 class="mb-1 mt-0">Banana pie</h3>
+        <p class="mt-1">Preheat oven to 350 degrees Farenheit. First add the flower, sugar, and banana to a mixing bowl. Then add the baking powder to let the pie rise.</p>
+        <div class="is-flex">
+          <ul>
+            <li>1/2 cup flour</li>
+            <li>1 cup sugar</li>
+            <li>1 banana</li>
+          </ul>
+          <ul class="px-4">
+            <li>1 tsp chocolate</li>
+            <li>1 tbsp baking powder</li>
+            <li>1/2 cup milk</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a href="#">See full recipe ></a>
   </body>
 </html>
