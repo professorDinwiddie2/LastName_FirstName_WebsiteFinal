@@ -1,32 +1,77 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <!--<link rel="stylesheet" href="stylesheet/styles.css">-->
-    <title>Recipe Card</title>
-  </head>
-  <body>
-    <div class="recipe-card">
-      <div class="img-wrap">
-        <img src="images/banana-pie.png" alt="Banana pie" width="500" height="216">
-      </div>
-      <div class="text">
-        <h3 class="mb-1 mt-0">Banana pie</h3>
-        <p class="mt-1">Preheat oven to 350 degrees Farenheit. First add the flower, sugar, and banana to a mixing bowl. Then add the baking powder to let the pie rise.</p>
-        <div class="is-flex">
-          <ul>
-            <li>1/2 cup flour</li>
-            <li>1 cup sugar</li>
-            <li>1 banana</li>
-          </ul>
-          <ul class="px-4">
-            <li>1 tsp chocolate</li>
-            <li>1 tbsp baking powder</li>
-            <li>1/2 cup milk</li>
-          </ul>
+<html>
+    <head>
+        <title>Crayon Exercize</title>
+        <style>
+            /* colors */
+            .bg-white {
+                background-color: #ffffff;
+            }
+            .bg-red {
+                background-color: rgb(255, 0, 0);
+            }
+            .bg-light-red {
+                background-color: rgb(255, 129, 129);
+            }
+            .color-red {
+                color: #de4962;
+            }
+            .red-grad {
+                background: linear-gradient(rgb(67, 39, 5), rgb(220, 104, 137), rgb(89, 11, 11));
+            }
+            .light-red-grad {
+                background: linear-gradient(rgb(116, 65, 20), rgb(255, 106, 148),rgb(175, 16, 16));
+            }
+            .bg-white-grad {
+                background: linear-gradient(#d0b7b7, #fff, #d0b7b7);
+            }
+
+            /* crayon */
+            .crayon {
+                max-width: 260px;
+                margin-bottom: 5px;
+                padding-left: 16px;
+                padding-right: 16px;
+                box-sizing: border-box;
+
+                box-shadow: 0 0 10px #555;
+            }
+            .crayon .sleeve {
+                border-right: 10px double black;
+                border-left: 10px double black;
+                padding: 8px;
+                text-align: center;
+            }
+            .crayon .borderless-sleeve {
+                padding: 8px;
+                text-align: center;
+            }
+            .crayon .label {
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 10px;
+
+                font-weight: bold;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .crayon .label-rect {
+                padding-left: 10px;
+                padding-right: 10px;
+
+                font-weight: bold;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="crayon red-grad">
+            <div class="sleeve light-red-grad"><span class="label color-red bg-white-grad">Crimson Red</span></div>
         </div>
-      </div>
-    </div>
-    <a href="#">See full recipe ></a>
-  </body>
-</html>
+        <div class="crayon bg-red">
+            <div class="sleeve bg-light-red"><span class="label color-red bg-white">Crimson Red</span></div>
+        </div>
+        <div class="crayon bg-red">
+            <div class="borderless-sleeve bg-light-red"><span class="label-rect color-red bg-white">Crimson Red</span></div>
+        </div>
+    </body>
+</html> 
