@@ -1,78 +1,121 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Crayon Exercize</title>
-        <style>
-            /* colors */
-            .bg-white {
-                background-color: #ffffff;
-            }
-            .bg-red {
-                background-color: rgb(255, 0, 0);
-            }
-            .bg-light-red {
-                background-color: rgb(255, 129, 129);
-            }
-            .color-red {
-                color: #de4962;
-            }
-            .red-grad {
-                background: linear-gradient(rgb(67, 39, 5), rgb(220, 104, 137), rgb(89, 11, 11));
-            }
-            .light-red-grad {
-                background: linear-gradient(rgb(116, 65, 20), rgb(255, 106, 148),rgb(175, 16, 16));
-            }
-            .bg-white-grad {
-                background: linear-gradient(#d0b7b7, #fff, #d0b7b7);
-            }
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>McDonald's Card</title>
+    <style>
+      /*Global Selectors */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      h2 {
+        color: #222020;
+      }
+      a {
+        font-weight: light;
+      }
 
-            /* crayon */
-            .crayon {
-                max-width: 260px;
-                margin-bottom: 5px;
-                padding-left: 16px;
-                padding-right: 16px;
-                box-sizing: border-box;
+      /* layout */
+      .display-flex {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .flex-item {
+        flex-basis: 100%;
+        padding: 8px;
+      }
+      .max-width {
+        margin: 0 auto;
+        max-width: 1200px;
+      }
 
-                box-shadow: 0 0 10px #555;
-            }
-            .crayon .sleeve {
-                border-right: 10px double black;
-                border-left: 10px double black;
-                padding: 8px;
-                text-align: center;
-            }
-            .crayon .borderless-sleeve {
-                padding: 8px;
-                text-align: center;
-            }
-            .crayon .label {
-                padding-left: 10px;
-                padding-right: 10px;
-                border-radius: 10px;
+      /* alignment */
+      .txt-center {
+        text-align: center;
+      }
 
-                font-weight: bold;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-            }
-            .crayon .label-rect {
-                padding-left: 10px;
-                padding-right: 10px;
+      /* spacing */
+      .margin-btm {
+        margin-bottom: 2em;
+      }
 
-                font-weight: bold;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="crayon red-grad">
-            <img src="this-is-fine.gif" alt="This is fine dog">
-            <div class="sleeve light-red-grad"><span class="label color-red bg-white-grad">Crimson Red</span></div>
+      /* McDonald's Card */
+      .mcdonalds-card {
+        padding: 1em;
+        border: 2px solid black;
+      }
+      .mcdonalds-card h2 {
+        font-size: 32px;
+        line-height: 38px;
+      }
+      .subtitle {
+        font-weight: lighter;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .legal {
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: lighter;
+      }
+
+      /* Buttons */
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ffbc0f;
+        text-decoration: none;
+        color: #333;
+      }
+      
+      /* colors */
+      .gray {
+        background-color: rgb(194, 194, 194);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="max-width">
+      <div class="display-flex">
+        <!-- Mcdonalds Card Component -->
+        <div class="flex-item">
+          <div class="mcdonalds-card">
+            <img src="images/mcdonalds-card.png" alt="chicken image" width="700" height="auto">
+            <h2>Free McDonald's After your First Order</h2>
+            <p class="subtitle">Join MyMcDonald's Rewards in the app today and unlock a free Hash Browns, Vanilla Cone, McChicken® or Cheeseburger after your first order.</p>
+            <p class="legal margin-btm">*Valid 1x thru 12/31/22 for first time MyMcDonald’s Rewards users. Program available only at participating McDonald's. Refer to MyMcDonald’s Program Terms for details. Excludes delivery. McD app download and registration required.</p>
+            <a class="btn" href="#">Download the App</a>
+          </div>
         </div>
-        <div class="crayon bg-red">
-            <div class="sleeve bg-light-red"><span class="label color-red bg-white">Crimson Red</span></div>
+        <div class="flex-item">
+          <div class="mcdonalds-card">
+            <img src="images/mcdonalds-card.png" alt="chicken image" width="700" height="auto">
+            <h2>Free McDonald's After your First Order</h2>
+            <p class="subtitle">Join MyMcDonald's Rewards in the app today and unlock a free Hash Browns, Vanilla Cone, McChicken® or Cheeseburger after your first order.</p>
+            <p class="legal margin-btm">*Valid 1x thru 12/31/22 for first time MyMcDonald’s Rewards users. Program available only at participating McDonald's. Refer to MyMcDonald’s Program Terms for details. Excludes delivery. McD app download and registration required.</p>
+            <a class="btn" href="#">Download the App</a>
+          </div>
         </div>
-        <div class="crayon bg-red">
-            <div class="borderless-sleeve bg-light-red"><span class="label-rect color-red bg-white">Crimson Red</span></div>
+        <div class="flex-item">
+          <div class="mcdonalds-card">
+            <img src="images/mcdonalds-card.png" alt="chicken image" width="700" height="auto">
+            <h2>Free McDonald's After your First Order</h2>
+            <p class="subtitle">Join MyMcDonald's Rewards in the app today and unlock a free Hash Browns, Vanilla Cone, McChicken® or Cheeseburger after your first order.</p>
+            <p class="legal margin-btm">*Valid 1x thru 12/31/22 for first time MyMcDonald’s Rewards users. Program available only at participating McDonald's. Refer to MyMcDonald’s Program Terms for details. Excludes delivery. McD app download and registration required.</p>
+            <a class="btn" href="#">Download the App</a>
+          </div>
         </div>
-    </body>
-</html> 
+      </div>
+    </div>
+  </body>
+</html>
