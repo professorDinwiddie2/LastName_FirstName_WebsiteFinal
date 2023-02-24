@@ -2,120 +2,157 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>McDonald's Card</title>
+    <link rel="stylesheet" href="email.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xwn5qru.css">
     <style>
-      /*Global Selectors */
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        box-sizing: border-box;
-        padding: 0;
-        font-family: Helvetica, Arial, sans-serif;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-      h2 {
-        color: #222020;
-      }
-      a {
-        font-weight: light;
-      }
+        * {
+          box-sizing: border-box;
+        }
+        header {
+          max-width: 600px;
+          padding: 20px 50px;
+          margin: 0 auto;
+          background-color: black;
+          border-bottom: white solid 1px;
+        }
+        header h2 {
+          font-size: 18px;
+          color: white;
+          margin: 0;
+        }
+        body {
+          background-color: #ccc;
+          font-family: proxima-nova, sans-serif;
+        }
+        main {
+          max-width: 600px;
+          margin: 0 auto;
+          background-color: #fff;
+        }
+        footer {
+          height: 60px;
+          background-color: #333;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+        .pre, .title, .subtitle {
+          margin:0;
+          color: #fff;
+        }
+        .pre {
+          font-size: 2.2rem;
+        }
+        .title {
+          font-size: 5rem;
+          line-height: .8;
+          letter-spacing: 2px;
+        }
+        .subtitle {
+          font-size: 1.4rem;
+          font-weight: 300;
+        }
+        .body {
+          padding: 2rem;
+        }
+        .menu-item {
+          margin-bottom: 1.5em;
+          box-shadow: 0 0 20px #c3c3c3;
+          padding: 1em;
+          display: flex;
+          grid-gap: 1em;
+          width: 100%;
+        }
+        .card-title {
+          margin-bottom: 0;
+          font-size: 1.2rem;
+        }
+        .card-text {
+          margin-top: 0;
+        }
+        .align-center {
+          text-align: center;
+        }
 
-      /* layout */
-      .display-flex {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .flex-item {
-        flex-basis: 33.33%;
-        padding: 8px;
-      }
-      .max-width {
-        margin: 0 auto;
-        max-width: 1200px;
-      }
-
-      /* alignment */
-      .txt-center {
-        text-align: center;
-      }
-
-      /* spacing */
-      .margin-btm {
-        margin-bottom: 2em;
-      }
-
-      /* McDonald's Card */
-      .mcdonalds-card {
-        padding: 1em;
-        border: 2px solid black;
-      }
-      .mcdonalds-card h2 {
-        font-size: 32px;
-        line-height: 38px;
-      }
-      .subtitle {
-        font-weight: lighter;
-        font-size: 14px;
-        line-height: 20px;
-      }
-      .legal {
-        font-size: 10px;
-        line-height: 12px;
-        font-weight: lighter;
-      }
-
-      /* Buttons */
-      .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #ffbc0f;
-        text-decoration: none;
-        color: #333;
-      }
-      
-      /* colors */
-      .gray {
-        background-color: rgb(194, 194, 194);
-      }
-    </style>
+        /* hero component */
+        .hero {
+          position: relative;
+          padding: 48px;
+          height: 400px;
+          background-image: url("images/hero-image.png");
+          background-color: rgba(34,31,31, 0.5);
+          background-size: cover;
+        }
+        .hero-container {
+          padding: 48px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          color: #ffffff;
+          background: linear-gradient(
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.8) 20%,
+            rgba(0, 0, 0, 0) 100%);
+        }
+        .hero h1, .hero p {
+          margin: 0;
+        }
+        .hero h1 {
+          font-size: 5rem;
+          line-height: 1;
+        }
+        .hero .pre-text {
+          display: block;
+          font-size: 2rem;
+        }
+        .hero p {
+          font-size: 1.4rem;
+          font-weight: 300;
+          line-height: 1.1;
+        }
+      </style>
+    <title>Email challenge</title>
   </head>
   <body>
-    <div class="max-width">
-      <div class="display-flex">
-        <!-- Mcdonalds Card Component -->
-        <div class="flex-item">
-          <div class="mcdonalds-card">
-            <img src="images/mcdonalds-card.png" alt="chicken image" width="700" height="auto">
-            <h2>Free McDonald's After your First Order</h2>
-            <p class="subtitle">Join MyMcDonald's Rewards in the app today and unlock a free Hash Browns, Vanilla Cone, McChicken® or Cheeseburger after your first order.</p>
-            <p class="legal margin-btm">*Valid 1x thru 12/31/22 for first time MyMcDonald’s Rewards users. Program available only at participating McDonald's. Refer to MyMcDonald’s Program Terms for details. Excludes delivery. McD app download and registration required.</p>
-            <a class="btn" href="#">Download the App</a>
-          </div>
+    <header><h2>Sam's Burgers</h2></header>
+    <main>
+      <section class="hero">
+        <div class="hero-container">
+          <h1><span class="pre-text">Fat is...</span>FLAVOR</h1>
+          <p>Meat the new quarter pounder</p>
         </div>
-        <div class="flex-item">
-          <div class="mcdonalds-card">
-            <img src="images/mcdonalds-card.png" alt="chicken image" width="700" height="auto">
-            <h2>Free McDonald's After your First Order</h2>
-            <p class="subtitle">Join MyMcDonald's Rewards in the app today and unlock a free Hash Browns, Vanilla Cone, McChicken® or Cheeseburger after your first order.</p>
-            <p class="legal margin-btm">*Valid 1x thru 12/31/22 for first time MyMcDonald’s Rewards users. Program available only at participating McDonald's. Refer to MyMcDonald’s Program Terms for details. Excludes delivery. McD app download and registration required.</p>
-            <a class="btn" href="#">Download the App</a>
+      </section>
+      <section class="body">
+        <h2 class="align-center">Top picks of the week</h2>
+        <article class="menu-item">
+          <img src="images/iam_os-AbsF-1.png" alt="Picture of food" width="150px" height="150px">
+          <div class="container">
+            <h4 class="card-title">Greasy burger</h4>
+            <p class="card-text">This is a castle with lots of cool stuff. People love the dragons that live here.</p>
           </div>
-        </div>
-        <div class="flex-item">
-          <div class="mcdonalds-card">
-            <img src="images/mcdonalds-card.png" alt="chicken image" width="700" height="auto">
-            <h2>Free McDonald's After your First Order</h2>
-            <p class="subtitle">Join MyMcDonald's Rewards in the app today and unlock a free Hash Browns, Vanilla Cone, McChicken® or Cheeseburger after your first order.</p>
-            <p class="legal margin-btm">*Valid 1x thru 12/31/22 for first time MyMcDonald’s Rewards users. Program available only at participating McDonald's. Refer to MyMcDonald’s Program Terms for details. Excludes delivery. McD app download and registration required.</p>
-            <a class="btn" href="#">Download the App</a>
+        </article>
+        <article class="menu-item">
+          <img src="images/iam_os-AbsF-1.png" alt="Picture of food" width="150px" height="150px">
+          <div class="container">
+            <h4 class="card-title">Greasy burger</h4>
+            <p class="card-text">This is a castle with lots of cool stuff. People love the dragons that live here.</p>
           </div>
-        </div>
-      </div>
-    </div>
+        </article>
+        <article class="menu-item">
+          <img src="images/iam_os-AbsF-1.png" alt="Picture of food" width="150px" height="150px">
+          <div class="container">
+            <h4 class="card-title">Greasy burger</h4>
+            <p class="card-text">This is a castle with lots of cool stuff. People love the dragons that live here.</p>
+          </div>
+        </article>
+      </section>
+      <footer class="footer">
+      </footer>
+    </main>
   </body>
 </html>
